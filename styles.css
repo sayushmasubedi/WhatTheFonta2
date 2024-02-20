@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+body::after
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(img.jpg) no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.lyrics
+{
+    width:550px;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+    color: #9F2B68;
+    box-shadow:
+     1px 1px 10px #fff,
+     -1px -1px 10px #000
+     ;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+.lyrics p 
+{
+    text-wrap: nowrap;
+}
+
+.chorus
+{
+    margin: 10px 20px;
+}
+
+.heppy
+{
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+
+}
